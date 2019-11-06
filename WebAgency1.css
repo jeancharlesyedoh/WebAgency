@@ -40,7 +40,7 @@ section
 	margin-bottom: 40px;
 	
 }
-#Accueil
+#accueil
 {
 	
 	height: 630px;
@@ -48,7 +48,7 @@ section
 }
 
 /******** HEADER********/
-.Accueil>header
+.accueil>header
 {
 	display: flex;
 	height: 130px;	
@@ -237,11 +237,11 @@ h1
 }
 /************* NOS SERVICES*********************/
 
-#Nos_Services
+#nos_services
 {
 	height: 490px;
 }
-#Nos_Services>header
+#nos_services>header
 {
 	display: flex;
 	flex-direction: column;
@@ -330,7 +330,7 @@ hr
     font-weight: bold;
 	font-size: 36px;
 }
-#Nos_Services>header>.text_NS
+#nos_services>header>.text_NS
 {
 	height: 50px;
     width: 400px;
@@ -346,7 +346,7 @@ hr
 }
 
 
-#Nos_Services>.Section_NS
+#nos_services>.Section_NS
 {
 	display: flex;
 	height: 310px;
@@ -354,7 +354,7 @@ hr
     bottom: 170px;
 }
 
-#Nos_Services>.Section_NS>.img_NS
+#nos_services>.Section_NS>.img_NS
 {
 	width: 40%;
     height: 300px;
@@ -544,24 +544,24 @@ span
 	font-size: 14px;
 }
 /**************NOS PROJETS*************/
-#Nos_Projets
+#nos_projets
 {
 	background-color: #f5f5f5;
 }
 
-#Nos_Projets>header
+#nos_projets>header
 {
 	display: flex;
 	flex-direction: column;
 	height: 250px;
 	align-items: center;
 }
-#Nos_Projets>header>.cadre_head
+#nos_projets>header>.cadre_head
 {
 	height: 200px;
 	width: 55%;
 }
-#Nos_Projets>header>.cadre_head>.head_NP
+#nos_projets>header>.cadre_head>.head_NP
 {
 	height: 50px;
 	width: 350px;
@@ -785,9 +785,9 @@ div>a
     margin-top: 8px;
 }
 
-/*******-------NOS_CONTACTS-----**********/
+/*******-------nos_contactS-----**********/
 
-#NOS_CONTACTS	
+#nos_contactS	
 {
 	
 	position: relative;
@@ -948,18 +948,18 @@ form>input,.Message
 		top: 169px;
 		margin: 0px;	
 	}
-	#Nos_Services>header>.text_NS
+	#nos_services>header>.text_NS
 	{
 	
 		position: absolute;
 		top: 215px;
 	}
-	#Nos_Services>.Section_NS 
+	#nos_services>.Section_NS 
 	{
     	position: absolute;
     	top: 333px;
 	}
-	#Nos_Services>.Section_NS>.img_NS
+	#nos_services>.Section_NS>.img_NS
 	{
 		padding-left: 0px;
 	}
