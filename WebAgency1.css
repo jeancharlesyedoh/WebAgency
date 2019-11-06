@@ -125,7 +125,7 @@ header>nav
 {
 	border-bottom: 5px ridge #5cadd3;
 	position: absolute;
-	bottom: 8px;
+	bottom: 0px;
     animation: anim 6s  infinite ;
 }
 
@@ -662,14 +662,6 @@ div.ligne_horizontale
     justify-content: center;
 	align-items: center;
 }
-
-/*.BG_NP>div:hover
-{
-	background-color: #5cadd3;
-	border-bottom: 2px solid #468cad;
-	
-}
-*/
 .caret-down:hover>a
 {
 	color: white;
