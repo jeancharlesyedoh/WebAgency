@@ -35,11 +35,7 @@ body{
 	margin-left: 9px;
     margin-top: 10px;
  } 
-section 
-{
-	margin-bottom: 40px;
-	
-}
+
 #accueil
 {
 	
@@ -74,21 +70,19 @@ header>nav
 }
 .logo
 {
-	width: 50%;
-    margin: auto;
-    padding-left: 150px;
+	margin: auto;
+    position: absolute;
+    transform: translate(-710px, 0px);
 	
 }
-#menu
+.menu
 {
 	display: flex;
-    width: 50%;
-    text-align: center;
-    align-items: flex-start;
-    margin-left: 291px;
+    position: absolute;
+    transform: translate(650px, 0px);
 }
 
-#menu a
+.menu a
 {
     padding-left: 20px;
     padding-right: 20px;
@@ -103,7 +97,7 @@ header>nav
     padding-bottom: 28px;
 }
 
-#menu>a:hover
+.menu>a:hover
 {
 	border-top: 2px solid #4facb0;
 }
@@ -239,7 +233,7 @@ h1
 
 #Nos_Services
 {
-	height: 490px;
+	height: 609px;
 }
 #Nos_Services>header
 {
@@ -254,8 +248,7 @@ h1
 {
 	height: 30px;
 	width: 257px;
-	position: relative;
-    bottom: 113px;
+	
 }
 hr
 {
@@ -267,8 +260,8 @@ hr
 }
 .ligne_NS
 {
-	position: relative;
-	bottom: 150px;
+	position: absolute;
+	bottom: 170px;
     display: flex;
     height: 29px;
     width: 130px;
@@ -326,7 +319,6 @@ hr
 {
 	color: black;
     text-align: center;
-	margin-top: -13px;
     font-weight: bold;
 	font-size: 36px;
 }
@@ -335,8 +327,8 @@ hr
 	height: 50px;
     width: 400px;
     text-align: center;
-    position: relative;
-	bottom: 174px;
+    position: absolute;
+    bottom: 107px;
 }
 .text_NS>p
 {
@@ -349,25 +341,28 @@ hr
 #Nos_Services>.Section_NS
 {
 	display: flex;
-	height: 310px;
-	position: relative;
-    bottom: 170px;
+    height: 401px;
+    position: relative;
+    bottom: 295px;
 }
 
 #Nos_Services>.Section_NS>.img_NS
 {
-	width: 40%;
+	position: absolute;
+    width: 40%;
     height: 300px;
-    padding-left: 170px;
+    left: 20%;
+	
    
 }
 
 .list_NS>.icone_NS
 {
-	width: 12%;
+	width: 10%;
     height: 370px;
-    position: relative;
-    top: 11px;
+    position: absolute;
+    top: 15px;
+    left: 6px;
 }
 
 .list_NS>.icone_NS>.cercle_NS1
@@ -510,9 +505,10 @@ hr
 }
 .list_NS>.par_NS
 {
-	width: 48%;
-    position: relative;
-    top: 21px;	
+	width: 90%;
+    position: absolute;
+    top: 42px;
+    left: 104px;	
 }
 span
 {
@@ -523,8 +519,9 @@ span
 {
 	display: flex;
     width: 60%;
-	position: relative;
-    top: 69px;
+    position: absolute;
+    top: 63px;
+    left: 46%;
 	
 }
 
@@ -544,24 +541,26 @@ span
 	font-size: 14px;
 }
 /**************NOS PROJETS*************/
-#nos_projets
+#Nos_Projets
 {
+
 	background-color: #f5f5f5;
 }
 
-#nos_projets>header
+#Nos_Projets>header
 {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	height: 250px;
 	align-items: center;
 }
-#nos_projets>header>.cadre_head
+#Nos_Projets>header>.cadre_head
 {
 	height: 200px;
 	width: 55%;
 }
-#nos_projets>header>.cadre_head>.head_NP
+#Nos_Projets>header>.cadre_head>.head_NP
 {
 	height: 50px;
 	width: 350px;
@@ -621,11 +620,11 @@ div.ligne_horizontale
 .BG_NP
 {
 	width: 100%;
-	display: flex;
-	height:40px;	
-	background-color:#E5E5E5;
-	position: relative;
-    top: 29px;
+    display: flex;
+    height: 40px;
+    background-color: #E5E5E5;
+    position: relative;
+    top: 10px;
 }
 
 .caret-down
@@ -713,21 +712,17 @@ div>a
 }
 
 /*******-------cardre photo-----**********/
-.Projet-titre 
-{
-	font-size: 20px;
-}
+
 #cadre_photo
 {
 	position: relative;
     width: 100%;
-	margin-top: 49px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;  
 }
+
 .centre_cadre_photo
 {
 	width: 80%;
@@ -749,7 +744,7 @@ div>a
 {
 	position: relative;
 	height: auto;
-	width: 18%;
+	width: 17%;
 }
 .photo:hover .overlay
 {
@@ -805,7 +800,7 @@ iframe
     display: flex;
     flex-direction: column;
     height: 574px;
-    width: 24%;
+    width: 18%;
     background-color: rgba(244, 253, 255, 0.68);
     color: #999da0;
     top: 55px;
@@ -885,7 +880,6 @@ form>input,.Message
 	width: 100%;
 	height: 783px;
 	position: absolute;
-	top: 0;
 	background-color: #468cad;
 	opacity: 0.4;
 	z-index: 2;
@@ -929,7 +923,7 @@ form>input,.Message
 	{
 		padding-left: 5px;
 	}
-	#menu
+	.menu
 	{
 		margin-right: 103px;
 		margin-left: 0px;
