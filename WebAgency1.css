@@ -72,14 +72,14 @@ header>nav
 {
 	margin: auto;
     position: absolute;
-    transform: translate(-710px, 0px);
+	transform: translate(-430px, 0px);
 	
 }
 .menu
 {
 	display: flex;
     position: absolute;
-    transform: translate(650px, 0px);
+	transform: translate(380px, 0px);
 }
 
 .menu a
@@ -117,9 +117,9 @@ header>nav
 }
 .trait_defilant
 {
+	bottom: 3px;
 	border-bottom: 5px ridge #5cadd3;
 	position: absolute;
-	bottom: 0px;
     animation: anim 6s  infinite ;
 }
 
