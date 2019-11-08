@@ -341,7 +341,7 @@ hr
 	position: absolute;
     width: 40%;
     height: 300px;
-    left: 20%;
+	left: 15%;
 	
    
 }
@@ -352,7 +352,7 @@ hr
     height: 370px;
     position: absolute;
     top: 15px;
-    left: 6px;
+	left: 14px;
 }
 
 .list_NS>.icone_NS>.cercle_NS1
@@ -498,7 +498,7 @@ hr
 	width: 90%;
     position: absolute;
     top: 42px;
-    left: 104px;	
+	left: 112px;
 }
 span
 {
@@ -790,7 +790,7 @@ iframe
     display: flex;
     flex-direction: column;
     height: 574px;
-    width: 18%;
+	width: 23%;
     background-color: rgba(244, 253, 255, 0.68);
     color: #999da0;
     top: 55px;
@@ -824,7 +824,7 @@ iframe
 .corps_form
 {
 	margin-left: 30px;
-	width: 350px;
+    width: 310px;
 }
 
 form>input,.Message
