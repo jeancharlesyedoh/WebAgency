@@ -971,8 +971,16 @@ form>input,.Message
 	.text_NP>p {
 		font-size: 12px;
 	}
-
-.BG_NP {
+	.cercle_NP {
+		right: 8px;
+		width: 29px;
+		height: 29px;
+	}	
+	.cercle_NP>.fa {
+		margin-left: 7px;
+		margin-top: 8px;
+	}
+	.BG_NP {
     top: 10px;
 }
 #NOS_CONTACTS
