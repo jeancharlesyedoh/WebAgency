@@ -900,74 +900,98 @@ form>input,.Message
   /* For desktop: */
  
 
-@media (min-width: 640px){
+@media (max-width: 1024px){
 	  
-	  
-}
-
-
-@media (max-width: 768px){
-	#container
-	{
-		display: flex;
-		flex-direction: row;
-	}
- 
-	.logo
-	{
+	  .logo
+	  {
+		transform: translate(-360px, 0px);
+	  }
+	  .menu{
+		transform: translate(285px, 0px);
+	  }
+	  .canvas
+	  {
+		  position: relative;
+	  }
+	  .trait_defilant {
 		position: absolute;
-   		right: 140px;
+		bottom: 177px;
+	  }
+	  h1{
+		position: relative;
+		font-size: 20px;
+		right: 98px;
+	  }
+	  .text_web
+	  {
+		position: absolute;
+   		bottom: 24px;
+    	font-size: 10px;
+   		left: 61px;
+	  }
+	  .button_iw
+	  {
+		height: 30px;
+		border-radius: 3px;
+		margin-left: -91px;
+		margin-top: 33px;
+	  }
+	  .cercle_noir_gauche {
+		left: 0px;
+		transform: translate(-25px,-60px);
 	}
-	.menu
-	{
-		transform: translate(205px, 0px);
-	} 
-	.canvas,.icone_NS{
-		display: none;
-	} 
+	.cercle_noir_droit {
+		right: 0px;
+		transform: translate(25px,-60px);
+	}
 	.head_NS
 	{
-		position: absolute;
-		top: 146px;
+		bottom: 186px;
+		position: relative;
 	}
-	header>.ligne_NS
-	{
-		position: absolute;
-		top: 169px;
-		margin: 0px;	
-	}
-	#Nos_Services>header>.text_NS
-	{
-		position: absolute;
-		top: 215px;
-	}
-	#Nos_Services>.Section_NS 
-	{
-    	position: absolute;
-    	top: 333px;
-	}
-	#Nos_Services>.Section_NS>.img_NS
-	{
-		position: absolute;
-		top: 250px;
-		width: 100%;
-		height: auto;
-		min-width: 100%;
-		max-width: 100%;
-	}
-	.Section_NS>.list_NS
-	{
+	.ligne_NS {
 		
+		bottom: 223px;
 	}
-	#cadre_photo
-	{
-		
+	.text_NS>p {
+		bottom: 186px;	
 	}
+
+	#Nos_Services>.Section_NS>.img_NS {
+		bottom: -118px;
+		left: 0px;
+	}
+	.Section_NS>.list_NS {
+		top: -135px;
+	}	
+	#Nos_Projets {
+		position: relative;
+		bottom: 203px;
+	}
+	.text_NP>p {
+		font-size: 12px;
+	}
+
+.BG_NP {
+    top: 10px;
+}
+#NOS_CONTACTS
+{
+	position: relative;
+    bottom: 204px;
+}
+}
+
+
+
+@media (min-width: 768px){
+	
+ 
 
 }
 
 
-@media (max-width: 1024px){
+@media all and (max-device-width: 480px){
 	
 
 	
