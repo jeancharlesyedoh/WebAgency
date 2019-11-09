@@ -333,13 +333,14 @@ hr
 #Nos_Services>.Section_NS
 {
 	display: flex;
-	transform: translate(50px, -308px);
+	transform: translate(0px, -308px);
+	width: 100%;
 }
 
 #Nos_Services>.Section_NS>.img_NS
 {
 	position: absolute;
-    width: 40%;
+	width: 30%;
     height: 300px;
 	left: 15%;
 	
@@ -348,7 +349,7 @@ hr
 
 .list_NS>.icone_NS
 {
-	width: 10%;
+	width: 100px;
     height: 370px;
     position: absolute;
     top: 15px;
@@ -495,7 +496,7 @@ hr
 }
 .list_NS>.par_NS
 {
-	width: 90%;
+	width: 390px;
     position: absolute;
     top: 42px;
 	left: 112px;
@@ -508,7 +509,6 @@ span
 .Section_NS>.list_NS
 {
 	display: flex;
-    width: 60%;
     position: absolute;
     top: 63px;
     left: 46%;
@@ -781,7 +781,7 @@ div>a
 iframe
 {
 	position:absolute;
-	width: 100%;
+    width: 99%;
 	height: 783px;
 }
 .form
@@ -824,7 +824,6 @@ iframe
 .corps_form
 {
 	margin-left: 30px;
-    width: 310px;
 }
 
 form>input,.Message
@@ -901,22 +900,27 @@ form>input,.Message
   /* For desktop: */
  
 
-  @media (min-width: 640px){
+@media (min-width: 640px){
 	  
 	  
 }
 
 
 @media (max-width: 768px){
+	#container
+	{
+		display: flex;
+		flex-direction: row;
+	}
  
 	.logo
 	{
-		padding-left: 5px;
+		position: absolute;
+   		right: 140px;
 	}
 	.menu
 	{
-		margin-right: 103px;
-		margin-left: 0px;
+		transform: translate(205px, 0px);
 	} 
 	.canvas,.icone_NS{
 		display: none;
@@ -934,7 +938,6 @@ form>input,.Message
 	}
 	#Nos_Services>header>.text_NS
 	{
-	
 		position: absolute;
 		top: 215px;
 	}
@@ -945,13 +948,16 @@ form>input,.Message
 	}
 	#Nos_Services>.Section_NS>.img_NS
 	{
-		padding-left: 0px;
+		position: absolute;
+		top: 250px;
+		width: 100%;
+		height: auto;
+		min-width: 100%;
+		max-width: 100%;
 	}
 	.Section_NS>.list_NS
 	{
-		margin-left: 50px;
-		top: 0px;
-    	left: 107px;
+		
 	}
 	#cadre_photo
 	{
