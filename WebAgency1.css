@@ -104,7 +104,7 @@ header>nav
 .canvas
 {
 
-	height:530px;
+	height: 518px;
     background-image: url('webagency_images/images/slider/bg1.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -117,7 +117,7 @@ header>nav
 }
 .trait_defilant
 {
-	bottom: 3px;
+	bottom: 0px;
 	border-bottom: 5px ridge #5cadd3;
 	position: absolute;
     animation: anim 6s  infinite ;
@@ -911,11 +911,11 @@ form>input,.Message
 	  }
 	  .canvas
 	  {
+	
 		  position: relative;
 	  }
 	  .trait_defilant {
-		position: absolute;
-		bottom: 3px;
+		bottom: 165px;
 	  }
 	  h1{
 		position: relative;
