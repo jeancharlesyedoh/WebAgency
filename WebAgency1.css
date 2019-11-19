@@ -76,7 +76,7 @@ header>nav
 {
 	display: flex;
     position: absolute;
-	transform: translate(460px, 0px);
+	transform: translate(275px, 0px);
 }
 
 .menu a
@@ -232,7 +232,7 @@ h1
 }
 /************* NOS SERVICES*********************/
 
-#Nos_Services
+#services
 {
 	height: 609px;
 	position: relative;
@@ -245,7 +245,7 @@ h1
 	position: absolute;
 }
 
-#Nos_Services>header
+#services>header
 {
 	display: flex;
 	flex-direction: column;
@@ -324,7 +324,7 @@ hr
     font-weight: bold;
 	font-size: 36px;
 }
-#Nos_Services>header>.text_NS
+#services>header>.text_NS
 {
 	height: 50px;
     width: 400px;
@@ -341,7 +341,7 @@ hr
     top: 10px;
 }
 
-#Nos_Services>.Section_NS
+#services>.Section_NS
 {
 	display: flex;
 	transform: translate(0px, -308px);
@@ -351,7 +351,7 @@ hr
 	top: 34%;
 }
 
-#Nos_Services>.Section_NS>.img_NS
+#services>.Section_NS>.img_NS
 {
 	position: absolute;
     width: 30%;
@@ -544,13 +544,13 @@ span
 	font-size: 14px;
 }
 /**************NOS PROJETS*************/
-#Nos_Projets
+#portfolio
 {
 
 	background-color: #f5f5f5;
 }
 
-#Nos_Projets>header
+#portfolio>header
 {
 	position: relative;
 	display: flex;
@@ -558,12 +558,12 @@ span
 	height: 250px;
 	align-items: center;
 }
-#Nos_Projets>header>.cadre_head
+#portfolio>header>.cadre_head
 {
 	height: 200px;
 	width: 55%;
 }
-#Nos_Projets>header>.cadre_head>.head_NP
+#portfolio>header>.cadre_head>.head_NP
 {
 	height: 50px;
 	width: 350px;
@@ -614,20 +614,13 @@ div.ligne_horizontale
 
 .ZoneBouton_NP
 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 79px;
-	margin-top: -53px;
-	width: 40%;
-	text-align: center;
-	
+	transform: translate(0px, -20px);
 	
 }
 
 .BG_NP
 {
-	width: 100%;
+	width: 300px;
     display: flex;
     height: 40px;
     background-color: #E5E5E5;
@@ -663,7 +656,7 @@ div.ligne_horizontale
 }
 .BG_NP>div
 {
-	width: 95px;
+	width: 100%;
 	height:40px;
 	display: flex;
     justify-content: center;
@@ -788,9 +781,9 @@ div>a
     margin-top: 8px;
 }
 
-/*******-------nos_contactS-----**********/
+/*******-------contact-----**********/
 
-#nos_contactS	
+#contact	
 {
 	
 	position: relative;
@@ -937,16 +930,117 @@ form>input,.Message
 
 
 @media (max-width: 768px){
-	
- 
+
 
 }
 
 
 @media all and (max-device-width: 480px){
-	
 
+	nav{
+		
+		transform: translate(0px, 0px);
+	}
 	
+	.logo{
+		width: auto;
+		height: 46px;
+		transform: translate(30px, 0px);
+	}
+	.logo>img
+		{
+			width: 70%;
+			height: 70%;
+		}
+	 .menu
+	 	{
+			 font-size: 10px;
+			 transform: translate(-10px, 50px);
+ 		}
+	.canvas_bloc>img , .cercle_noir , .trait_defilant , .web_blue
+	{
+		display: none;
+	} 
+	.infos_web
+	{
+		position: relative;
+		left: 0;
+	}
+	.infos_web>.text_web
+	{
+		color: black;
+		transform:translate(10px, 0px);
+
+	}
+
+	.button_iw
+	{
+		transform: translate(132px, 0px);
+		height: 28px;
+	}
+	#services>.Section_NS
+	{
+
+		top: 35%;
+	}
+	.head_NS {
+		top: 11%;
+		left: 37%;
+	}
+
+	.head_NS>h2 , .head_NP>h2
+	{
+	    transform: translate(-35px, 0px);
+		font-size: 21px;
+	}
+	.ligne_NS {
+		
+		top: 53px;
+		left: 107px;
+		}
+	#services>header>.text_NS
+	{
+		top: 69px;
+
+	}
+	#services>.Section_NS>.img_NS
+	 {
+		top: 22%;
+		width: 100%;
+		left: 0%;	
+	}
+	.icone_NS
+		{
+			display: none;
+		}
+	.list_NS>.par_NS
+	{
+		top: 63px;
+		left: -175px;
+	}
+	.list_NS>.par_NS>ul>li {
+		font-size: 12px;
+	}
+	.list_NS>.par_NS>ul {
+	
+		padding-left: 27px;
+	}
+	iframe
+	{
+		position: relative;
+	}
+	.map
+	{
+		transform: translate(0px, -789px);
+	}
+	.form 
+	{
+		position: relative;
+		left: 0%;
+		width: 100%;
+    	top: 0%;
+	
+	}
 }
 
 @media (min-width: 1200px){
