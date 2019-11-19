@@ -46,7 +46,8 @@ img
 header
 {
 	display: flex;
-    height: 100px;	
+	height: 100px;	
+	width: auto;
 	justify-content: center;
 
 }
@@ -897,28 +898,6 @@ form>input,.Message
 /* -----------------Definition des Medias Queries-------------------- */
 
 
-/* @media screen and (max-width:411px) { 
-	header>nav
-	{
-		
-		height: 90px ;l'ajout de important permet de surpasser les règles de cascade et de spécificité  
-	}
-	
-	div.canvas{	
-	  display: none;  masque l'image 
-	}
-	div.logo
-	{
-		position: absolute;
-		transform: translate(-49%,0%);
-		width: 105px ;
-		height: 47px ;
-	}
-
-  }
-  */
-  /* responsive tablette */
-  /* For desktop: */
  
 
 @media (max-width: 1024px){
