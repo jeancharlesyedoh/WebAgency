@@ -752,9 +752,9 @@ div>a
 }
 .photo:hover .overlay
 {
+	bottom: 0px;
 	opacity: 1;
     height: 50%;
-    /* bottom: 16px; */
 }
 .photo>img
 { 		
