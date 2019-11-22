@@ -67,7 +67,6 @@ header>nav
 }
 .logo
 {
-	margin: auto;
     position: absolute;
 	transform: translate(-460px, 0px);
 	
@@ -665,6 +664,7 @@ div.ligne_horizontale
 .caret-down:hover>a
 {
 	color: white;
+	font-family: Roboto;
 }
 .caret-down:hover
 {
