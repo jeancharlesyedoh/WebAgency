@@ -752,7 +752,7 @@ div>a
 }
 .photo:hover .overlay
 {
-	bottom: 0px;
+	bottom: 10px;
 	opacity: 1;
     height: 50%;
 }
