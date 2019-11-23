@@ -104,17 +104,17 @@ header>nav
     overflow: hidden;
     position: relative;	
 }
-.canvas_bloc img
+/* .canvas_bloc img
 {
 	width: 100%;
 	height: auto;
-}
+} */
 .trait_defilant
 {
-	bottom:4px;
+	/* bottom:4px; */
 	border-bottom: 5px ridge #5cadd3;
-	position: absolute;
-    animation: anim 6s  infinite ;
+	animation: anim 6s  infinite ;
+	
 }
 
 @-webkit-keyframes anim{
@@ -160,9 +160,9 @@ header>nav
     border-radius: 25px;
     height: 50px;
     background-color: #3e3e42;
-	top: 45%;
-    position: absolute;
-    z-index: 1;
+	top: 30%;
+	position: absolute;
+    z-index: 4;
 }
 
 .cercle_noir_gauche>i
@@ -183,20 +183,20 @@ header>nav
     margin-left: 13px;
     margin-top: 18px;
 }
-/* .canvas_bloc
+ .canvas_bloc
 {
-	height:700px;
+	height: 522px;
 	width: 100%;
-	 position: absolute;
-	z-index: 1;
-	/* margin-right: 10px; 
-	background-image: url('webagency_images/images/slider/bg1.jpg');
-    background-repeat: no-repeat;
+	position: relative;
+	z-index: 2;
+	margin-right: 10px; 
+	background-image: url('webagency_images/images/slider/bg1.jpg'),url('webagency_images/images/slider/bg2.jpg');
+	background-repeat: no-repeat;
     background-size: 100%;
-    /* animation-name: example; 
+    animation-name: example; 
     animation-duration: 8s; 
     animation: example 10s infinite;
-} */
+} 
 h1
 {
 	color: white;	
@@ -896,6 +896,7 @@ form>input,.Message
 	  .logo
 	  {
 		transform: translate(-360px, 0px);
+		
 	  }
 	  .menu{
 		transform: translate(285px, 0px);
@@ -906,7 +907,14 @@ form>input,.Message
 		font-size: 20px;
 		
 	    }
-	
+	.cercle_noir
+	{
+		top: 25%;
+	}
+	.trait_defilant
+	{
+		transform: translate(0px, -171px);
+	}
 	.text_NP>p {
 		font-size: 12px;
 	}
@@ -928,6 +936,10 @@ form>input,.Message
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	#services {
+		
+		top: -150px;
 	}
 	.photo{
 
@@ -982,15 +994,29 @@ form>input,.Message
 	.infos_web>.text_web
 	{
 		color: black;
-		transform:translate(10px, 0px);
+		transform: translate(10px, -120px);
 
 	}
+	.canvas_bloc {
+		height: 200px;
+	}
+	#portfolio {
+		background-color: #f5f5f5;
+		position: relative;
+		top: -141px;
+	}
 
+
+	#contact{
+		position: relative;
+		top: -141px;
+	}
 	.button_iw
 	{
-		transform: translate(132px, 0px);
+		transform: translate(132px, -139px);
 		height: 28px;
 	}
+	
 	#services>.Section_NS
 	{
 
