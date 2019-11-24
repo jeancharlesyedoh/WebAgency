@@ -1009,6 +1009,7 @@ form>input,.Message
 	#contact{
 		position: relative;
 		top: -141px;
+		height: 709px;
 	}
 	.button_iw
 	{
@@ -1089,8 +1090,6 @@ form>input,.Message
 		left: 0%;
 		width: 100%;
 		top: 0%;
-		height: 613px;
-	
 	}
 }
 
