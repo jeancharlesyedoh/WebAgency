@@ -26,7 +26,8 @@ body{
 
 img
 {
-	width: 100%;
+	max-width :100% ;
+	height :auto;
 }
 
 #container
@@ -235,7 +236,7 @@ h1
 {
 	
 	position: relative;
-	top: -4px;
+	top: -150px;
 	width: 84%;
 }
 
@@ -887,7 +888,7 @@ form>input,.Message
 
  
 
-@media (max-width: 1024px){
+@media (min-width: 768px) and  (max-width: 1024px){
 	  
 	  .logo
 	  {
@@ -953,7 +954,7 @@ form>input,.Message
 }
 
 
-@media all and (max-device-width: 480px){
+@media (max-width: 768px){
 	.photo {
     		width: 100%;
 		}
