@@ -57,7 +57,6 @@ header
 header>nav
 {
 	position: fixed;
-	top: 0;	
 	height: 100px;
 	width: 100%;
 	background: white;
@@ -69,14 +68,14 @@ header>nav
 .logo
 {
     position: absolute;
-	transform: translate(-460px, 0px);
+	transform: translate(-584px, 0px);
 	
 }
 .menu
 {
 	display: flex;
     position: absolute;
-	transform: translate(275px, 0px);
+	transform: translate(584px, 0px);
 }
 
 .menu a
@@ -161,7 +160,7 @@ header>nav
     border-radius: 25px;
     height: 50px;
     background-color: #3e3e42;
-	top: 30%;
+    top: 45%;
 	position: absolute;
     z-index: 4;
 }
@@ -214,8 +213,8 @@ h1
 {
 	position: absolute;
     z-index: 2;
-    left: 11%;
-    top: 23%;  
+	left: 11%;
+	top: 31%;
 }
 .text_web
 {
@@ -233,23 +232,22 @@ h1
 /************* NOS SERVICES*********************/
 
 #services
-{
-	
+{	
 	position: relative;
-	top: -150px;
-	width: 84%;
+	width: 100%;
 }
-
-.head_NS
+#services>h2
 {
-	position: absolute;
+	width: 200px;
+	margin: 0 auto;
+	transform: translate(0px, 10px);
 }
 
-#services>header
+.ligne_NS
 {
 	display: flex;
-	align-items: center;	
-	transform: translate(108px, 10px);
+	justify-content: center;
+    transform: translate(-20px, 0px);
 }
 
 hr
@@ -259,13 +257,7 @@ hr
     color: #f0f0f0;
     height: 15px;
 }
-.ligne_NS
-{
-	position: absolute;
-    top: 69px;
-    display: flex;
-    
-}
+
 .hr_1
 {
 	width:50px;
@@ -333,30 +325,64 @@ hr
 	position: absolute;
 	color: #6A6E73;
 	font-size: 12px;
-	right: 48px;
-    top: 10px;
+	right: 44%;
+    top: 55px;
 }
 
 #services>.Section_NS
 {
-
+	display: flex;
+	justify-content: center;
 	width: 100%;
-	height: 490px;
 	position: relative;
-	top: 34%;
 }
 
-#services>.Section_NS>.img_NS {
-    position: absolute;
-    width: 30%;
-	left: 18%;
-    top: 10%;
+.img_NS >img{
+	padding-right: 55px;
 }
 
+.list_NS {
+
+    display: flex;
+    flex-direction: column;
+	transform: translate(0px, 59px);
+}
+.bloc
+{
+	display: flex;	
+}
+.bloc_texte
+{
+    margin-left: 25px;
+}
+.icone>.fa
+{
+	color: #5cadd3;
+}
+.fa-cubes, .fa-pie-chart, .fa-line-chart
+{
+	padding: 13px;
+}
+.icone	
+{
+	border: 1px solid grey;
+    position: relative;
+    border-radius: 66%;
+    height: 63px;
+    width: 63px;
+}
+.icone .fa-circle
+{
+	position: absolute;
+	right: -7px;
+	top: 24px;
+	color: #5cadd3;
+}
+
+/*  
 .list_NS>.icone_NS
 {
 	width: 100px;
-    height: 370px;
     position: absolute;
     top: 15px;
 	left: 14px;
@@ -500,8 +526,8 @@ hr
 {
 	margin-top: 57px;
 }
-.list_NS>.par_NS
-{
+ .list_NS>.par_NS 
+ {
 	width: 390px;
     position: absolute;
     top: 42px;
@@ -516,7 +542,6 @@ span
     display: flex;
     position: absolute;
     bottom: 75%;
-    left: 49%;
     width: 70%;
 }
 
@@ -535,6 +560,7 @@ span
 	color: #b3b4b7;
 	font-size: 14px;
 }
+ */
 /**************NOS PROJETS*************/
 #portfolio
 {
@@ -888,8 +914,17 @@ form>input,.Message
 
  
 
-@media (min-width: 768px) and  (max-width: 1024px){
-	  
+ @media (max-width: 1024px)
+/* @media all and (min-width: 1024px) and (max-width: 1280px) */{
+	.ligne_NS
+	{
+		left: 42%;
+	}
+	.img_NS
+	{
+		width: 50%;
+		transform: translate(-15px, 37px);
+	}  
 	  .logo
 	  {
 		transform: translate(-360px, 0px);
@@ -914,6 +949,7 @@ form>input,.Message
 	}
 	.text_NP>p {
 		font-size: 12px;
+		    right: 38%;
 	}
 	.cercle_NP {
 		right: 8px;
@@ -927,7 +963,9 @@ form>input,.Message
 	.BG_NP {
     top: 10px;
 		}
-
+	.ZoneBouton_NP {
+		transform: translate(0px, -51px);
+	}
 	#cadre_photo{
 
 		display: flex;
@@ -943,18 +981,23 @@ form>input,.Message
 		width: 40%;
 
 	}
+	.text_NS>p
+	{
+		right: 38%;
+	}
 
+	.infos_web 
+	{
+		left: 6%;
+    	top: 19%;
+	}
+	.list_NS{
+		transform: translate(0px, 175px);
+	}
 }
 
-
-
-@media (max-width: 768px){
-
-
-}
-
-
-@media (max-width: 768px){
+ @media (max-width: 768px) 
+/* @media all and (orientation: portrait) */{
 	.photo {
     		width: 100%;
 		}
@@ -970,59 +1013,52 @@ form>input,.Message
 		transform: translate(30px, 0px);
 	}
 	.logo>img
-		{
-			width: 70%;
-			height: 70%;
-		}
-	 .menu
-	 	{
-			 font-size: 10px;
-			 transform: translate(-10px, 50px);
- 		}
-	.canvas_bloc>img , .cercle_noir , .trait_defilant , .web_blue
+	{
+	width: 70%;
+	height: 70%;
+	}
+	.menu
+	{
+		font-size: 10px;
+		transform: translate(-10px, 50px);
+	}
+	.canvas
+	{
+	top: 8px;
+	}
+	.text
+	{
+		display: none;
+	}
+	.canvas_bloc>img , .cercle_noir , .trait_defilant , .web_blue,.button_iw
 	{
 		display: none;
 	} 
-	.infos_web
-	{
-		position: relative;
-		left: 0;
+	
+	.infos_web {
+		left: 21%;
+		top: 51%;
 	}
 	.infos_web>.text_web
 	{
 		color: black;
-		transform: translate(10px, -120px);
+		
+	} 
 
-	}
-	.canvas_bloc {
-		height: 200px;
-	}
 	#portfolio {
 		background-color: #f5f5f5;
 		position: relative;
-		top: -141px;
 	}
+
 	#services>header {
 		
 		transform: translate(23px, 10px);
 	}
 
-	#contact{
-		position: relative;
-		top: -141px;
-		height: 709px;
-	}
-	.button_iw
+	/* .button_iw
 	{
-		transform: translate(132px, -139px);
-		height: 28px;
-	}
-	
-	#services>.Section_NS
-	{
-
-		top: 35%;
-	}
+		display: none;
+	} */
 	.head_NS {
 		top: 11%;
     left: 31%;
@@ -1030,40 +1066,36 @@ form>input,.Message
 
 	.head_NS>h2 , .head_NP>h2
 	{
-		transform: translate(-15px, 0px);
+		transform: translate(44px, 0px);
 		font-size: 21px;
 	}
-	.Section_NS>.list_NS {
-		
-			bottom: 66%;
-		left: 49%;
-
+	
+	.ligne_NS 
+	{
+		transform: translate(4px, -54px);
 	}
-	.ligne_NS {
-		
-		top: 53px;
-   		left: 85px;
-		}
+	#services>h2 
+	{
+		transform: translate(20px, -45px);
+	}
 	#services>header>.text_NS
 	{
 		top: 69px;
 
 	}
-	#services>.Section_NS>.img_NS
-	 {
-		top: 5%;
-   		width: 100%;
-    	left: 8%;
+	.list_NS {
+		transform: translate(-25px, 74px);
 	}
-	.icone_NS
-		{
-			display: none;
-		}
+	.bloc_texte>p
+	 {
+		font-size: 14px;
+	 }
+	.icone {
+		display: none;
+	}
 
-	.Section_NS>.list_NS {
-		
-		left: 61%;
-		width: 72%;
+	.img_NS {
+		transform: translate(-7px, -42px);
 	}
 	.list_NS>.par_NS
 	{
@@ -1092,10 +1124,44 @@ form>input,.Message
 		width: 100%;
 		top: 0%;
 	}
+	.text_NS
+	{
+		transform: translate(-217px, -170px);
+	}
+	.text_NS>p {
+		right: 16px;
+		top: 98px;
+	}
 }
 
-@media (min-width: 1200px){
+@media (max-width: 360px){
 	
+		.infos_web {
+			left: 7%;
+			top: 29%;
+		}
+
+		#services>h2 {
+			transform: translate(20px, -107px);
+		}
+		.ligne_NS {
+			transform: translate(4px, -111px);
+		}
+
+		.img_NS {
+			transform: translate(87px, -32px);
+			width: 100%;
+		}
+		.text_NS {
+			transform: translate(-12px, -187px);
+		}
+		.list_NS {
+			transform: translate(-74px, 103px);
+		}
+		.head_NP>h2 {
+			transform: translate(-26px, 0px);
+			
+		}
 
 	}
 
