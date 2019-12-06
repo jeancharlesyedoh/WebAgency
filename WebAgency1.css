@@ -806,8 +806,14 @@ form>input,.Message
 		left: 6%;
 	}
 }
-
- @media (max-width: 768px)
+/* @media all and (max-width: 768px) and (orientation:landscape)
+{
+	.trait_defilant
+	{
+		bottom: 9px;
+	}
+} */
+ @media only screen and (max-width: 768px) 
 {
 	.menu
 	{
@@ -833,7 +839,7 @@ form>input,.Message
 	}
 	.canvas_bloc
 	{
-		height: 263px;
+		height: 252px;
 	}
 	.infos_web {
 		top: 28%;
@@ -865,7 +871,7 @@ form>input,.Message
 	.head_NS>h2 , .head_NP>h2
 	{
 		font-size: 21px;
-		margin-left: 63px;
+		margin-left: 38px;
 	}
 
 	.ligne_NS
@@ -927,6 +933,72 @@ form>input,.Message
 	    right: 237px;
 	}
 }
+ /* @media  (orientation :landscape) and (max-device-width: 812px)
+{
+	.infos_web 
+	{
+		top: 19%;
+	}
+	.cercle_noir 
+	{
+		top: 38%;
+	}
+	.canvas_bloc 
+	{
+		height: 279px;
+	}
+	h1 
+	{
+		font-size: 18px;
+	}
+	.text_web 
+	{
+		font-size: 13px;
+	}
+	.button_iw 
+	{
+	
+		height: 35px;
+	}
+	
+}  */
+
+@media  (orientation :landscape) and (max-device-width: 823px)
+{
+	.trait_defilant
+	{
+		display: none;
+	}
+	.infos_web {
+		display: none;
+	}
+	.canvas_bloc 
+	{
+		height: 282px;
+	}
+	h1 
+	{
+		font-size: 18px;
+	}
+	.text_web 
+	{
+		font-size: 13px;
+	}
+	.button_iw 
+	{
+	
+		height: 35px;
+	}
+	.cercle_noir {
+		top: 33%;
+	}
+}
+/* @media  (orientation :landscape) and (max-device-width: 736px)
+{
+	.canvas_bloc {
+		height: 252px;
+	}
+} */
 @media all and (max-device-width: 480px) /*règle css pour mobiles*/
 {
 	nav
@@ -972,7 +1044,7 @@ form>input,.Message
 	}
 	.BG_NP
 	 {
-		width: 361px;
+		width: 351px;
 	}
 	.logo
 	{
@@ -987,5 +1059,5 @@ form>input,.Message
 
 		bottom: 38px;
 	}
-
+}
 /* -----------------fin Definition des Medias Queries-------------------- */
