@@ -33,13 +33,13 @@ img
 #container
 {
 	width: 100%;
-	
+
 }
  .cercle_NP>.fa
  {
 	margin-left: 9px;
     margin-top: 10px;
- } 
+ }
 
 
 
@@ -67,13 +67,13 @@ header>nav
 }
 .logo
 {
-	margin-left: 253px;	
+	margin-left: 253px;
 }
 .menu
 {
 	display: flex;
-	margin-right: 253px;	
-   
+	margin-right: 253px;
+
 }
 
 .menu a
@@ -99,10 +99,12 @@ header>nav
 	margin-top: 100px;
     width: 100%;
     overflow: hidden;
-    position: relative;	
+    position: relative;
 }
 .trait_defilant
 {
+    position: relative;
+    /* bottom: 64px; */
 	border-bottom: 5px ridge #5cadd3;
 	animation: anim 6s  infinite ;
 }
@@ -111,14 +113,14 @@ header>nav
 	0% {width: 0px;}
 	100% {width: 100%;}
 	}
-	
+
 @keyframes anim{
 	0% {width: 0px;}
 	100% {width: 100%;}
 	}
 
 /*Animation css*/
-@keyframes example 
+@keyframes example
 
 {
 
@@ -182,13 +184,13 @@ header>nav
 	background-image: url('webagency_images/images/slider/bg1.jpg'),url('webagency_images/images/slider/bg2.jpg');
 	background-repeat: no-repeat;
     background-size: 100%;
-    animation-name: example; 
-    animation-duration: 8s; 
+    animation-name: example;
+    animation-duration: 8s;
     animation: example 10s infinite;
-} 
+}
 h1
 {
-	color: white;	
+	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 38px;
@@ -197,7 +199,7 @@ h1
 .web_blue
 {
 	color:#5cadd3;
-}		
+}
 .infos_web
 {
 	position: absolute;
@@ -221,15 +223,18 @@ h1
 /************* NOS SERVICES*********************/
 
 #services
-{	
+{
+	margin-top: 75px;
 	position: relative;
 	width: 100%;
+	
 }
 #services>h2
 {
 	font-weight: bold;
 	font-size: 36px;
 	text-align: center;
+	margin-top: -49px;
 }
 .ligne
 {
@@ -280,7 +285,7 @@ hr
 }
 
 .cercle
-{	
+{
 	border-radius: 40px;
     background: #5cadd3;
     width: 14px;
@@ -291,7 +296,7 @@ hr
 
 }
 .cercle_NP
-{	
+{
 	border-radius: 40px;
 	background: #5cadd3;
 	right: 20px;
@@ -300,7 +305,7 @@ hr
     width: 35px;
     height: 35px;
     border: 2px solid white;
-    
+
 }
 .head_NS>h2
 {
@@ -318,6 +323,7 @@ hr
 }
 .text_NS>p
 {
+	margin-right: -43px;
 	position: absolute;
 	color: #6A6E73;
 	font-size: 12px;
@@ -345,7 +351,7 @@ hr
 }
 .bloc
 {
-	display: flex;	
+	display: flex;
 }
 .bloc_texte
 {
@@ -359,7 +365,7 @@ hr
 {
 	padding: 13px;
 }
-.icone	
+.icone
 {
 	margin-bottom: 15px;
 	border: 1px solid grey;
@@ -384,7 +390,7 @@ p span:first-child
 
 #portfolio
 {
-	
+
 	background-color: #f5f5f5;
 	position: relative;
 }
@@ -399,7 +405,7 @@ p span:first-child
 
 #portfolio>header>.cadre_head>.head_NP
 {
-	margin: auto;
+	margin-left: 65px;
 	position: relative;
 	bottom: 10px;
 }
@@ -442,7 +448,7 @@ div.ligne_horizontale
 /* .ZoneBouton_NP
 {
 	transform: translate(0px, -20px);
-	
+
 } */
 
 .BG_NP
@@ -459,7 +465,7 @@ div.ligne_horizontale
 {
     position: relative;
 	color:#468cad;
-	
+
 }
 .projet_selected::after
 {
@@ -469,7 +475,7 @@ div.ligne_horizontale
 	left: -29px;
 	color:#468cad;
 	pointer-events: none;
-	
+
 }
 .Creative:hover::after,.Corporate:hover::after,.Last:hover::after
 {
@@ -479,7 +485,7 @@ div.ligne_horizontale
 	left: -29px;
 	color:#468cad;
 	pointer-events: none;
-	
+
 }
 .BG_NP>div
 {
@@ -492,7 +498,7 @@ div.ligne_horizontale
 .caret-down:hover>a
 {
 	color: white;
-	
+
 }
 .caret-down:hover
 {
@@ -511,26 +517,26 @@ div.ligne_horizontale
 }
 
 div>a
-{	
+{
 		text-decoration: none;
 		color: #7c7f83;
 		font-family: Roboto;
 }
 
 .first
-{	
+{
 	border-radius: 3px 0px 0px 3px;
-}	
+}
 
 .last
 {
-	border-radius: 0px 3px 3px 0px;	
+	border-radius: 0px 3px 3px 0px;
 
 }
-.w3-bar>.w3-button 
+.w3-bar>.w3-button
 {
 	background-color: hsl(0, 0%, 90%)!important;
-	
+
 }
 .w3-bar>.round-left
 {
@@ -550,7 +556,7 @@ div>a
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 .centre_cadre_photo
@@ -558,7 +564,7 @@ div>a
 	width: 80%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 
@@ -586,7 +592,7 @@ div>a
 	height: 26%;
 }
 .photo>img
-{ 		
+{
 
 	height: auto;
 	width: 100%;
@@ -604,7 +610,7 @@ div>a
     color: #f1f1f1;
     font-size: 16px;
   }
-  
+
 
 
 .cercle>i
@@ -625,7 +631,7 @@ iframe
 	height: 783px;
 }
 .form
-{  
+{
 	position: absolute;
     display: flex;
     flex-direction: column;
@@ -686,7 +692,7 @@ form>input,.Message
 	font-size: 18px;
 	color: white;
 	background-color:#5cadd3;
-	border-radius: 4px 4px 4px 4px;	
+	border-radius: 4px 4px 4px 4px;
 	border: none;
 	border-bottom: 4px solid #468cad;
 	margin-top: 10px;
@@ -718,20 +724,36 @@ form>input,.Message
 	z-index: 2;
 }
 /* -----------------Definition des Medias Queries-------------------- */
+@media (max-width: 1600px)
+{
+	.trait_defilant
+	{
+		bottom: 64px;
+	}
+	#services
+	{
+		margin-top: 61px;
+	}
+}
 
-
- 
-
- @media (max-width: 1024px)
- {
+@media (max-width: 1024px) 
+{
+	#services
+	{
+		margin-top: 61px;
+	}
 	.canvas_bloc
 	{
-	    height: 264px;
+		height: 352px;
+	}
+	.trait_defilant
+	{
+		bottom: 0px;
 	}
 	.ligne_NS
 	{
 		left: 42%;
-	} 
+	}
 	.logo
 	{
 		margin-left: 66px;
@@ -739,10 +761,13 @@ form>input,.Message
 	.menu{
 		margin-right: 66px;
 	}
-	h1{
-
-	font-size: 20px;
-	
+	h1
+	{
+		font-size: 20px;
+	}
+	#portfolio>header>.cadre_head>.head_NP 
+	{
+		margin-left: 31px;	
 	}
 	.text_NP>p {
 		font-size: 12px;
@@ -751,16 +776,10 @@ form>input,.Message
 		right: 8px;
 		width: 29px;
 		height: 29px;
-	}	
+	}
 	.cercle_NP>.fa {
 		margin-left: 7px;
 		margin-top: 8px;
-	}
-	.BG_NP {
-    top: 10px;
-		}
-	.ZoneBouton_NP {
-		transform: translate(0px, -51px);
 	}
 	#cadre_photo{
 
@@ -769,7 +788,7 @@ form>input,.Message
 		justify-content: center;
 	}
 	/* #services {
-		
+
 		top: -150px;
 	} */
 	.photo{
@@ -779,20 +798,25 @@ form>input,.Message
 	}
 	.text_NS>p
 	{
-		right: 35%;
+		right: 39%;
 	}
 
-	.infos_web 
+	.infos_web
 	{
 		left: 6%;
 	}
 }
 
- @media (max-width: 768px) 
+ @media (max-width: 768px)
 {
-	.menu 
+	.menu
 	{
 		margin-right: 0;
+	}
+	.trait_defilant
+	{
+		bottom: 0px;
+		position: relative;
 	}
 	.photo
 	{
@@ -807,15 +831,19 @@ form>input,.Message
 		width: auto;
 		margin-left: 0px;
 	}
+	.canvas_bloc
+	{
+		height: 263px;
+	}
 	.infos_web {
-		top: 14%;
+		top: 28%;
 		font-size: 12px;
 	}
 	.cercle_noir
 	{
 		top: 37%;
-	} 
-	#services>h2 
+	}
+	#services>h2
 	{
 		font-size: 30px;
 	}
@@ -826,14 +854,9 @@ form>input,.Message
 	}
 
 	#services>header {
-		
+
 		transform: translate(23px, 10px);
 	}
-
-	/* .button_iw
-	{
-		display: none;
-	} */
 	.head_NS {
 		top: 11%;
     left: 31%;
@@ -844,25 +867,21 @@ form>input,.Message
 		font-size: 21px;
 		margin-left: 63px;
 	}
-	
-	.ligne_NS 
+
+	.ligne_NS
 	{
 		transform: translate(4px, -54px);
 	}
-	/* #services>h2 
-	{
-		transform: translate(20px, -45px);
-	} */
 	#services>header>.text_NS
 	{
 		top: 69px;
 
 	}
 	.list_NS {
-	
+
 		padding-left: 150px;
 		padding-top: 0px;
-		
+
 	}
 	.bloc_texte>p
 	 {
@@ -872,7 +891,7 @@ form>input,.Message
 		display: flex;
 		flex-direction: column;
 	}
-	.img_NS 
+	.img_NS
 	{
 		padding-left: 131px;
 		padding-top: 15px;
@@ -886,7 +905,7 @@ form>input,.Message
 		font-size: 12px;
 	}
 	.list_NS>.par_NS>ul {
-	
+
 		padding-left: 27px;
 	}
 	iframe
@@ -897,7 +916,7 @@ form>input,.Message
 	{
 		transform: translate(0px, -789px);
 	}
-	.form 
+	.form
 	{
 		position: relative;
 		left: 0%;
@@ -908,19 +927,18 @@ form>input,.Message
 	    right: 237px;
 	}
 }
-
-@media (max-width: 375px){
-	
+@media all and (max-device-width: 480px) /*règle css pour mobiles*/
+{
 	nav
 	{
 		height: 160px;
 		flex-direction: column;
 	}
-	.canvas 
+	.canvas
 	{
 		margin-top: 160px;
 	}
-	.canvas_bloc 
+	.canvas_bloc
 	{
 		height: 124px;
 	}
@@ -936,17 +954,17 @@ form>input,.Message
 	{
 		font-size: 22px;
 	}
-	.NS.ligne 
+	.NS.ligne
 	{
 		bottom: 24px;
 	}
-	.text_NS>p 
+	.text_NS>p
 	{
-		right: 35px;
+	    right: 75px;
 	}
 	.img_NS {
 		padding-left: 0px;
-		 padding-top: 0px;
+		padding-top: 0px;
 	}
 	.list_NS {
 		padding-left: 9px;
@@ -956,17 +974,17 @@ form>input,.Message
 	 {
 		width: 361px;
 	}
-	.logo 
+	.logo
 	{
 		padding-top: 7px;
 	}
-	.NP.ligne 
+	.NP.ligne
 	{
 		bottom: 37px;
 	}
 	.text_NP
 	{
-		
+
 		bottom: 38px;
 	}
 
