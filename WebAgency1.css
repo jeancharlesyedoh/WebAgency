@@ -97,15 +97,23 @@ header>nav
 .canvas
 {
 	/* margin-top: 100px; */
+	padding-top: 100px;
+	height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+.canvas img
+{
+	width: 100%;
+	height: auto;
 }
 .trait_defilant
 {
     /* position: relative; */
 	/* bottom: 64px; */
 	position: absolute;
+	z-index: 2;
     bottom: 0px;
 	border-bottom: 5px ridge #5cadd3;
 	animation: anim 6s  infinite ;
@@ -154,7 +162,7 @@ header>nav
     border-radius: 25px;
     height: 50px;
     background-color: #3e3e42;
-    top: 45%;
+	top: 53%;
 	position: absolute;
     z-index: 4;
 }
@@ -177,7 +185,7 @@ header>nav
     margin-left: 13px;
     margin-top: 18px;
 }
- .canvas_bloc
+ /* .canvas_bloc
 {
 	margin-top: 100px;
 	height: 512px;
@@ -190,7 +198,7 @@ header>nav
     animation-name: example;
     animation-duration: 8s;
     animation: example 10s infinite;
-}
+} */
 h1
 {
 	color: white;
@@ -207,9 +215,8 @@ h1
 {
     z-index: 2;
 	position: absolute;
-	top: 35%;
-    left: 11%;
-	
+    top: 47%;
+    left: 8%;
 }
 .text_web
 {
@@ -228,38 +235,33 @@ h1
 
 #services
 {
-	margin-top: 75px;
 	position: relative;
 	width: 100%;
-	
 }
-#services>h2
+#services h2 , .head_NP h2
 {
 	font-weight: bold;
 	font-size: 36px;
 	text-align: center;
-	margin-top: -49px;
+	margin-bottom: 1px;
 }
 .ligne
 {
 	position: relative;
     display: flex;
-    height: 29px;
     width: 130px;
     margin: auto;
 }
-.NS.ligne
+/* .NS.ligne
 {
 	bottom: 38px;
-}
-
-
-
+} */
 hr
 {
 	border: none;
-    border-top: 1px double #F6F6F6;
-    color: #f0f0f0;
+    border-top: 1px double #d4d4d4;
+	color: #f0f0f0;
+	
     height: 15px;
 }
 
@@ -327,12 +329,10 @@ hr
 }
 .text_NS>p
 {
-	margin-right: -43px;
-	position: absolute;
 	color: #6A6E73;
-	font-size: 12px;
-	right: 43%;
-    top: 55px;
+    font-size: 12px;
+	text-align: center;
+	margin-top: -7px;
 }
 
 #services>.Section_NS
@@ -343,15 +343,14 @@ hr
 	position: relative;
 	padding-bottom: 15px;
 }
+.list_NS {
+    display: flex;
+	flex-direction: column;
+	padding-top: 111px;
+}
 .img_NS
 {
-	padding-top: 17px;
-}
-.list_NS {
-
-    display: flex;
-    flex-direction: column;
-	padding-top: 136px;
+	padding-right: 71px;
 }
 .bloc
 {
@@ -398,7 +397,6 @@ p span:first-child
 	background-color: #f5f5f5;
 	position: relative;
 }
-
 #portfolio>header
 {
 	position: relative;
@@ -406,30 +404,19 @@ p span:first-child
 	flex-direction: column;
 	align-items: center;
 }
-
 #portfolio>header>.cadre_head>.head_NP
-{
-	margin-left: 65px;
+{	
 	position: relative;
-	bottom: 10px;
 }
-
-.NP.ligne{
-	bottom: 28px;
+.NP.ligne
+{
+	bottom: 7px;
 }
-
 .ligne_NP hr
 {
 	border-top: 1px double #EBEBEB;
     color: #EBEBEB;
 }
-.head_NP>h2
-{
-    font-weight: bold;
-    font-size: 36px;
-}
-
-
 div.ligne_horizontale
 {
 	height: 20px;
@@ -442,7 +429,7 @@ div.ligne_horizontale
     width: 62%;
     margin: auto;
     position: relative;
-    bottom: 22px;
+	bottom: 28px;
 }
 .text_NP>p
 {
@@ -552,7 +539,8 @@ div>a
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	background-color: #f5f5f5;
 }
 
 .centre_cadre_photo
@@ -594,7 +582,7 @@ div>a
 	width: 100%;
 
 }
-.overlay 
+.overlay
 {
 	display: flex;
     flex-direction: column;
@@ -714,25 +702,17 @@ form>input,.Message
 /* -----------------Definition des Medias Queries-------------------- */
 @media (max-width: 1471px)
 {
-	.trait_defilant,.infos_web,.trait_defilant,.cercle_noir
+	/* / .trait_defilant,.infos_web,.trait_defilant,.cercle_noir
 	{
-		display: none;
-	}
-} 
-@media (max-width: 1024px) 
+
+	} */
+}
+@media (max-width: 1024px)
 {
-	#services
-	{
-		margin-top: 61px;
-	}
-	.canvas_bloc
+	/* .canvas_bloc
 	{
 		height: 352px;
-	}
-	.trait_defilant
-	{
-		bottom: 0px;
-	}
+	} */
 	.ligne_NS
 	{
 		left: 42%;
@@ -747,10 +727,6 @@ form>input,.Message
 	h1
 	{
 		font-size: 20px;
-	}
-	#portfolio>header>.cadre_head>.head_NP 
-	{
-		margin-left: 31px;	
 	}
 	.text_NP>p {
 		font-size: 12px;
@@ -780,23 +756,19 @@ form>input,.Message
 		right: 39%;
 	}
 
-	.infos_web
+	/* .infos_web
 	{
 		left: 7%;
   		top: 39%;
-	}
+	} */
 }
- @media only screen and (max-width: 768px) 
+ @media only screen and (max-width: 768px)
 {
 	.menu
 	{
 		margin-right: 0;
 	}
-	.trait_defilant
-	{
-		/* bottom: 0px;
-		position: relative; */
-	}
+
 	.photo
 	{
 		width: 75%;
@@ -810,24 +782,24 @@ form>input,.Message
 		width: auto;
 		margin-left: 0px;
 	}
-	.canvas_bloc
+	
+	.infos_web
 	{
-		height: 252px;
-	}
-	.infos_web 
-	{
-		top: 28%;
+		top: 41%;
 		font-size: 12px;
 	}
 	.cercle_noir
 	{
-		top: 37%;
+		top: 55%;
 	}
 	#services>h2
 	{
 		font-size: 30px;
 	}
-
+	.img_NS {
+		margin: 0 auto;
+		padding-right: 0px;
+	}
 	#portfolio {
 		background-color: #f5f5f5;
 		position: relative;
@@ -841,13 +813,10 @@ form>input,.Message
 		top: 11%;
     left: 31%;
 	}
-
 	.head_NS>h2 , .head_NP>h2
 	{
 		font-size: 21px;
-		margin-left: 38px;
 	}
-
 	.ligne_NS
 	{
 		transform: translate(4px, -54px);
@@ -855,13 +824,10 @@ form>input,.Message
 	#services>header>.text_NS
 	{
 		top: 69px;
-
 	}
 	.list_NS {
-
 		padding-left: 150px;
 		padding-top: 0px;
-
 	}
 	.bloc_texte>p
 	 {
@@ -871,11 +837,11 @@ form>input,.Message
 		display: flex;
 		flex-direction: column;
 	}
-	.img_NS
+	/* .img_NS
 	{
 		padding-left: 131px;
 		padding-top: 15px;
-	}
+	} */
 	.list_NS>.par_NS
 	{
 		top: 63px;
@@ -916,21 +882,21 @@ form>input,.Message
 	.infos_web {
 		display: none;
 	}
-	.canvas_bloc 
+	.canvas_bloc
 	{
 		height: 282px;
 	}
-	h1 
+	h1
 	{
 		font-size: 18px;
 	}
-	.text_web 
+	.text_web
 	{
 		font-size: 13px;
 	}
-	.button_iw 
+	.button_iw
 	{
-	
+
 		height: 35px;
 	}
 	.cercle_noir {
@@ -947,63 +913,74 @@ form>input,.Message
 {
 	nav
 	{
-		height: 160px;
+		height: 118px;
 		flex-direction: column;
-	}
-	.canvas
-	{
-		margin-top: 53px;
 	}
 	.canvas_bloc
 	{
+		display: flex;
+		flex-direction:row;
 		height: 124px;
 	}
 	.infos_web
 	{
-		display: none;
-	}
-	.cercle_noir
-	{
-		display: none;
+		position: relative;
+		left: 0px;
+    	bottom: 0px;
 	}
 	#services>h2
 	{
 		font-size: 22px;
 	}
-	.NS.ligne
-	{
-		bottom: 24px;
-	}
 	.text_NS>p
 	{
-	    right: 75px;
+		right: 75px;
 	}
 	.img_NS
 	{
 		padding-left: 0px;
 		padding-top: 0px;
 	}
-	.list_NS 
+	.list_NS
 	{
 		padding-left: 9px;
 		padding-top: 0px;
 	}
 	.BG_NP
-	 {
-		width: 351px;
+	{
+	    width: 99%;
 	}
 	.logo
 	{
 		padding-top: 7px;
 	}
-	.NP.ligne
+	 .NP.ligne
 	{
-		bottom: 37px;
+		bottom: 12px;
 	}
 	.text_NP
 	{
-
+		
 		bottom: 38px;
+	}
+	.menu a
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		width: 43px;
+		padding-left: 13px;
+	}
+	.text_web, h1{
+		color: #131313;
+		text-align: center;
+	}
+	.trait_defilant,.button_iw,.dot,.web_blue
+	{
+		display: none;
+	}
+	.cercle_noir
+	{
+		display: none;
 	}
 }
 /* -----------------fin Definition des Medias Queries-------------------- */
