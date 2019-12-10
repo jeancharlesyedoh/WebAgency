@@ -96,15 +96,17 @@ header>nav
 }
 .canvas
 {
-	margin-top: 100px;
+	/* margin-top: 100px; */
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 .trait_defilant
 {
-    position: relative;
-    /* bottom: 64px; */
+    /* position: relative; */
+	/* bottom: 64px; */
+	position: absolute;
+    bottom: 0px;
 	border-bottom: 5px ridge #5cadd3;
 	animation: anim 6s  infinite ;
 }
@@ -177,7 +179,8 @@ header>nav
 }
  .canvas_bloc
 {
-	height: 586px;
+	margin-top: 100px;
+	height: 512px;
 	width: 100%;
 	position: relative;
 	z-index: 2;
@@ -202,10 +205,11 @@ h1
 }
 .infos_web
 {
-	position: absolute;
     z-index: 2;
-	left: 11%;
-	top: 31%;
+	position: absolute;
+	top: 35%;
+    left: 11%;
+	
 }
 .text_web
 {
@@ -444,13 +448,6 @@ div.ligne_horizontale
 {
 	text-align: center;
 }
-
-/* .ZoneBouton_NP
-{
-	transform: translate(0px, -20px);
-
-} */
-
 .BG_NP
 {
 	width: 400px;
@@ -460,7 +457,6 @@ div.ligne_horizontale
     position: relative;
 	top: -19px;
 }
-
 .caret-down
 {
     position: relative;
@@ -598,7 +594,8 @@ div>a
 	width: 100%;
 
 }
-.overlay {
+.overlay 
+{
 	display: flex;
     flex-direction: column;
 	position: absolute;
@@ -610,9 +607,6 @@ div>a
     color: #f1f1f1;
     font-size: 16px;
   }
-
-
-
 .cercle>i
 {
 	margin-left: 9px;
@@ -643,7 +637,6 @@ iframe
 	left: 66%;
 	z-index: 3;
 }
-
 .entete_form
 {
 	font-size: 14px;
@@ -654,15 +647,12 @@ iframe
 	flex-direction: column;
 	margin-left: 26px;
 }
-
 .entete_form >.NC_ent
 {
 	font-size: 28px;
 	font-weight: bold;
 	color: black;
 }
-
-
 .entete_form>.NC_WB
 {
 	color:#6b6f74;
@@ -703,12 +693,10 @@ form>input,.Message
 {
 	margin-bottom:10px;
 }
-
 .email
 {
 	margin-bottom:10px;
 }
-
 .subject
 {
 	margin-bottom:10px;
@@ -724,18 +712,13 @@ form>input,.Message
 	z-index: 2;
 }
 /* -----------------Definition des Medias Queries-------------------- */
-@media (max-width: 1600px)
+@media (max-width: 1471px)
 {
-	.trait_defilant
+	.trait_defilant,.infos_web,.trait_defilant,.cercle_noir
 	{
-		bottom: 64px;
+		display: none;
 	}
-	#services
-	{
-		margin-top: 61px;
-	}
-}
-
+} 
 @media (max-width: 1024px) 
 {
 	#services
@@ -787,10 +770,6 @@ form>input,.Message
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	/* #services {
-
-		top: -150px;
-	} */
 	.photo{
 
 		width: 40%;
@@ -803,16 +782,10 @@ form>input,.Message
 
 	.infos_web
 	{
-		left: 6%;
+		left: 7%;
+  		top: 39%;
 	}
 }
-/* @media all and (max-width: 768px) and (orientation:landscape)
-{
-	.trait_defilant
-	{
-		bottom: 9px;
-	}
-} */
  @media only screen and (max-width: 768px) 
 {
 	.menu
@@ -821,8 +794,8 @@ form>input,.Message
 	}
 	.trait_defilant
 	{
-		bottom: 0px;
-		position: relative;
+		/* bottom: 0px;
+		position: relative; */
 	}
 	.photo
 	{
@@ -841,7 +814,8 @@ form>input,.Message
 	{
 		height: 252px;
 	}
-	.infos_web {
+	.infos_web 
+	{
 		top: 28%;
 		font-size: 12px;
 	}
@@ -933,36 +907,6 @@ form>input,.Message
 	    right: 237px;
 	}
 }
- /* @media  (orientation :landscape) and (max-device-width: 812px)
-{
-	.infos_web 
-	{
-		top: 19%;
-	}
-	.cercle_noir 
-	{
-		top: 38%;
-	}
-	.canvas_bloc 
-	{
-		height: 279px;
-	}
-	h1 
-	{
-		font-size: 18px;
-	}
-	.text_web 
-	{
-		font-size: 13px;
-	}
-	.button_iw 
-	{
-	
-		height: 35px;
-	}
-	
-}  */
-
 @media  (orientation :landscape) and (max-device-width: 823px)
 {
 	.trait_defilant
@@ -1008,7 +952,7 @@ form>input,.Message
 	}
 	.canvas
 	{
-		margin-top: 160px;
+		margin-top: 53px;
 	}
 	.canvas_bloc
 	{
@@ -1034,11 +978,13 @@ form>input,.Message
 	{
 	    right: 75px;
 	}
-	.img_NS {
+	.img_NS
+	{
 		padding-left: 0px;
 		padding-top: 0px;
 	}
-	.list_NS {
+	.list_NS 
+	{
 		padding-left: 9px;
 		padding-top: 0px;
 	}
