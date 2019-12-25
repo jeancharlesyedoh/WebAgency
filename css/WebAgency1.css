@@ -23,13 +23,11 @@ body{
     font-family : "Roboto", Helvetica, Arial, sans-serif;
     margin: 0px;
 }
-
 img
 {
 	max-width :100% ;
 	height :auto;
 }
-
 #container
 {
 	width: 100%;
@@ -41,13 +39,10 @@ img
     margin-top: 10px;
  }
 
-
-
 /******** HEADER********/
 header
 {
 	display: flex;
-	/* height: 100px;*/
 	width: auto;
 	justify-content: center;
 
@@ -57,7 +52,6 @@ header
 header>nav
 {
 	position: fixed;
-	/* height: 100px; */
 	width: 100%;
 	background: white;
 	display: flex;
@@ -110,8 +104,6 @@ header>nav
 }
 .trait_defilant
 {
-    /* position: relative; */
-	/* bottom: 64px; */
 	position: absolute;
 	z-index: 2;
     bottom: 0px;
@@ -131,7 +123,6 @@ header>nav
 
 /*Animation css*/
 @keyframes example
-
 {
 
 	/* from {background-image:url('webagency_images/images/slider/bg1.jpg');}
@@ -149,13 +140,11 @@ header>nav
 		background-image:url('webagency_images/images/slider/bg1.jpg');
 	}
 }
-
 .cercle_noir_gauche
 {
 	left:0px;
 	transform: translateX(-25px);
 }
-
 .cercle_noir
 {
 	width: 50px;
@@ -166,7 +155,6 @@ header>nav
 	position: absolute;
     z-index: 4;
 }
-
 .cercle_noir_gauche>i
 {
 	color: white;
@@ -185,20 +173,6 @@ header>nav
     margin-left: 13px;
     margin-top: 18px;
 }
- /* .canvas_bloc
-{
-	margin-top: 100px;
-	height: 512px;
-	width: 100%;
-	position: relative;
-	z-index: 2;
-	background-image: url('webagency_images/images/slider/bg1.jpg'),url('webagency_images/images/slider/bg2.jpg');
-	background-repeat: no-repeat;
-    background-size: 100%;
-    animation-name: example;
-    animation-duration: 8s;
-    animation: example 10s infinite;
-} */
 h1
 {
 	color: white;
@@ -206,7 +180,6 @@ h1
 	text-transform: uppercase;
 	font-size: 38px;
 }
-
 .web_blue
 {
 	color:#5cadd3;
@@ -232,7 +205,6 @@ h1
 	height: 40px;
 }
 /************* NOS SERVICES*********************/
-
 #services
 {
 	position: relative;
@@ -272,14 +244,12 @@ hr
 	margin-right: 3px;
 }
 
-
 .hr_2
 {
 	width:50px;
 	margin-top: 18px;
 	margin-left: 3px;
 }
-
 .cercle_Centre
 {
 	border-radius: 40px;
@@ -289,7 +259,6 @@ hr
     margin-top: 9px;
 	border: 4px solid white;
 }
-
 .cercle
 {
 	border-radius: 40px;
@@ -299,7 +268,6 @@ hr
     margin-top: -74px;
     border: 2px solid white;
 	margin-left: 228px;
-
 }
 .cercle_NP
 {
@@ -311,7 +279,6 @@ hr
     width: 35px;
     height: 35px;
     border: 2px solid white;
-
 }
 .head_NS>h2
 {
@@ -393,7 +360,6 @@ p span:first-child
 
 #portfolio
 {
-
 	background-color: #f5f5f5;
 	position: relative;
 }
@@ -448,7 +414,6 @@ div.ligne_horizontale
 {
     position: relative;
 	color:#468cad;
-
 }
 .projet_selected::after
 {
@@ -458,7 +423,6 @@ div.ligne_horizontale
 	left: -29px;
 	color:#468cad;
 	pointer-events: none;
-
 }
 .Creative:hover::after,.Corporate:hover::after,.Last:hover::after
 {
@@ -468,7 +432,6 @@ div.ligne_horizontale
 	left: -29px;
 	color:#468cad;
 	pointer-events: none;
-
 }
 .BG_NP>div
 {
@@ -493,24 +456,20 @@ div.ligne_horizontale
 	background-color: #5cadd3;
 	border-bottom: 2px solid #468cad;
 }
-
 .projet_selected>a
 {
 	color: white;
 }
-
 div>a
 {
 		text-decoration: none;
 		color: #7c7f83;
 		font-family: Roboto;
 }
-
 .first
 {
 	border-radius: 3px 0px 0px 3px;
 }
-
 .last
 {
 	border-radius: 0px 3px 3px 0px;
@@ -529,9 +488,7 @@ div>a
 {
 	border-radius: 	0px 6px 6px 0px;
 }
-
 /*******-------cardre photo-----**********/
-
 #cadre_photo
 {
 	position: relative;
@@ -542,7 +499,6 @@ div>a
 	flex-wrap: wrap;
 	background-color: #f5f5f5;
 }
-
 .centre_cadre_photo
 {
 	width: 80%;
@@ -550,9 +506,6 @@ div>a
     display: flex;
     flex-direction: column;
 }
-
-
-
 .bloc_overlay
 {
 	/* margin-top: 16px; */
@@ -600,7 +553,6 @@ div>a
 	margin-left: 9px;
     margin-top: 8px;
 }
-
 /*******-------contact-----**********/
 #contact
 {
@@ -700,13 +652,6 @@ form>input,.Message
 	z-index: 2;
 }
 /* -----------------Definition des Medias Queries-------------------- */
-@media (max-width: 1471px)
-{
-	/* / .trait_defilant,.infos_web,.trait_defilant,.cercle_noir
-	{
-
-	} */
-}
 @media (max-width: 1024px)
 {
 	/* .canvas_bloc
@@ -755,12 +700,6 @@ form>input,.Message
 	{
 		right: 39%;
 	}
-
-	/* .infos_web
-	{
-		left: 7%;
-  		top: 39%;
-	} */
 }
  @media only screen and (max-width: 768px)
 {
@@ -903,12 +842,6 @@ form>input,.Message
 		top: 33%;
 	}
 }
-/* @media  (orientation :landscape) and (max-device-width: 736px)
-{
-	.canvas_bloc {
-		height: 252px;
-	}
-} */
 @media all and (max-device-width: 480px) /*règle css pour mobiles*/
 {
 	nav
