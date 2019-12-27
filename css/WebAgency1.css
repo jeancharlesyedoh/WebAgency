@@ -90,7 +90,6 @@ header>nav
 }
 .canvas
 {
-	/* margin-top: 100px; */
 	padding-top: 100px;
 	height: auto;
     width: 100%;
@@ -116,29 +115,10 @@ header>nav
 	100% {width: 100%;}
 	}
 
-@keyframes anim{
+@keyframes anim
+{
 	0% {width: 0px;}
 	100% {width: 100%;}
-	}
-
-/*Animation css*/
-@keyframes example
-{
-
-	/* from {background-image:url('webagency_images/images/slider/bg1.jpg');}
-	to {background-image:url('webagency_images/images/slider/bg2.jpg');}/ */
-	0% {
-		/* opacity: 0; */
-		background-image:url('webagency_images/images/slider/bg1.jpg');
-	}
-	50% {
-		/* opacity: 1; */
-		background-image:url('webagency_images/images/slider/bg2.jpg');
-	}
-	100% {
-		/* opacity: 0; */
-		background-image:url('webagency_images/images/slider/bg1.jpg');
-	}
 }
 .cercle_noir_gauche
 {
@@ -404,6 +384,7 @@ div.ligne_horizontale
 .BG_NP
 {
 	width: 400px;
+	margin: 0 auto;
     display: flex;
     height: 40px;
     background-color: #E5E5E5;
@@ -654,10 +635,6 @@ form>input,.Message
 /* -----------------Definition des Medias Queries-------------------- */
 @media (max-width: 1024px)
 {
-	/* .canvas_bloc
-	{
-		height: 352px;
-	} */
 	.ligne_NS
 	{
 		left: 42%;
@@ -878,10 +855,6 @@ form>input,.Message
 	{
 		padding-left: 9px;
 		padding-top: 0px;
-	}
-	.BG_NP
-	{
-	    width: 99%;
 	}
 	.logo
 	{
