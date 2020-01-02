@@ -377,7 +377,7 @@ div.ligne_horizontale
 }
 .BG_NP
 {
-	width: 400px;
+	width: 80%;
 	margin: 0 auto;
     display: flex;
     height: 40px;
