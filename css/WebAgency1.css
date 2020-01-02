@@ -34,10 +34,10 @@ img
 
 }
  .cercle_NP>.fa
- {
-	margin-left: 9px;
-    margin-top: 10px;
- }
+{
+margin-left: 9px;
+margin-top: 10px;
+}
 
 /******** HEADER********/
 header
@@ -115,11 +115,11 @@ header>nav
 	100% {width: 100%;}
 	}
 
-@keyframes anim
-{
+@keyframes anim{
 	0% {width: 0px;}
 	100% {width: 100%;}
-}
+	}
+
 .cercle_noir_gauche
 {
 	left:0px;
@@ -204,26 +204,19 @@ h1
     width: 130px;
     margin: auto;
 }
-/* .NS.ligne
-{
-	bottom: 38px;
-} */
 hr
 {
 	border: none;
     border-top: 1px double #d4d4d4;
 	color: #f0f0f0;
-	
     height: 15px;
 }
-
 .hr_1
 {
 	width:50px;
 	margin-top: 18px;
 	margin-right: 3px;
 }
-
 .hr_2
 {
 	width:50px;
@@ -281,7 +274,6 @@ hr
 	text-align: center;
 	margin-top: -7px;
 }
-
 #services>.Section_NS
 {
 	display: flex;
@@ -290,7 +282,8 @@ hr
 	position: relative;
 	padding-bottom: 15px;
 }
-.list_NS {
+.list_NS 
+{
     display: flex;
 	flex-direction: column;
 	padding-top: 111px;
@@ -348,7 +341,6 @@ p span:first-child
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 #portfolio>header>.cadre_head>.head_NP
 {	
@@ -414,7 +406,7 @@ div.ligne_horizontale
 	color:#468cad;
 	pointer-events: none;
 }
-.BG_NP>div
+.BG_NP>div /*div à l'intérieur de BG_NP*/
 {
 	width: 100%;
 	height:40px;
@@ -443,9 +435,9 @@ div.ligne_horizontale
 }
 div>a
 {
-		text-decoration: none;
-		color: #7c7f83;
-		font-family: Roboto;
+	text-decoration: none;
+	color: #7c7f83;
+	font-family: Roboto;
 }
 .first
 {
@@ -489,10 +481,8 @@ div>a
 }
 .bloc_overlay
 {
-	/* margin-top: 16px; */
 	margin-left: 16px;
 	width: 82%;
-
 }
 .photo
 {
@@ -633,7 +623,7 @@ form>input,.Message
 	z-index: 2;
 }
 /* -----------------Definition des Medias Queries-------------------- */
-@media (max-width: 1024px)
+@media (max-width: 1399px)
 {
 	.ligne_NS
 	{
@@ -643,39 +633,46 @@ form>input,.Message
 	{
 		margin-left: 66px;
 	}
-	.menu{
+	.menu
+	{
 		margin-right: 66px;
 	}
 	h1
 	{
 		font-size: 20px;
 	}
-	.text_NP>p {
+	.text_NP>p 
+	{
 		font-size: 12px;
 	}
-	.cercle_NP {
+	.cercle_NP 
+	{
 		right: 8px;
 		width: 29px;
 		height: 29px;
 	}
-	.cercle_NP>.fa {
+	.cercle_NP>.fa 
+	{
 		margin-left: 7px;
 		margin-top: 8px;
 	}
-	#cadre_photo{
-
+	#cadre_photo
+	{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.photo{
-
+	.photo
+	{
 		width: 40%;
-
 	}
 	.text_NS>p
 	{
 		right: 39%;
+	}
+	 .photo:hover .overlay,.menu>a:hover
+	{
+		display: none;
 	}
 }
  @media only screen and (max-width: 768px)
@@ -684,7 +681,6 @@ form>input,.Message
 	{
 		margin-right: 0;
 	}
-
 	.photo
 	{
 		width: 75%;
@@ -712,22 +708,25 @@ form>input,.Message
 	{
 		font-size: 30px;
 	}
-	.img_NS {
+	.img_NS 
+	{
 		margin: 0 auto;
 		padding-right: 0px;
 	}
-	#portfolio {
+	#portfolio 
+	{
 		background-color: #f5f5f5;
 		position: relative;
 	}
 
-	#services>header {
-
+	#services>header 
+	{
 		transform: translate(23px, 10px);
 	}
-	.head_NS {
+	.head_NS 
+	{
 		top: 11%;
-    left: 31%;
+        left: 31%;
 	}
 	.head_NS>h2 , .head_NP>h2
 	{
@@ -741,32 +740,31 @@ form>input,.Message
 	{
 		top: 69px;
 	}
-	.list_NS {
+	.list_NS 
+	{
 		padding-left: 150px;
 		padding-top: 0px;
 	}
 	.bloc_texte>p
-	 {
+	{
 		font-size: 14px;
-	 }
-	 #services>.Section_NS {
+	}
+	 #services>.Section_NS 
+	{
 		display: flex;
 		flex-direction: column;
 	}
-	/* .img_NS
-	{
-		padding-left: 131px;
-		padding-top: 15px;
-	} */
 	.list_NS>.par_NS
 	{
 		top: 63px;
 		left: -175px;
 	}
-	.list_NS>.par_NS>ul>li {
+	.list_NS>.par_NS>ul>li 
+	{
 		font-size: 12px;
 	}
-	.list_NS>.par_NS>ul {
+	.list_NS>.par_NS>ul 
+	{
 
 		padding-left: 27px;
 	}
@@ -788,6 +786,7 @@ form>input,.Message
 	.text_NS>p {
 	    right: 237px;
 	}
+	
 }
 @media  (orientation :landscape) and (max-device-width: 823px)
 {
@@ -821,6 +820,11 @@ form>input,.Message
 }
 @media all and (max-device-width: 480px) /*règle css pour mobiles*/
 {
+	.canvas
+	{
+		padding-top: 120px;
+	}
+
 	nav
 	{
 		height: 118px;
@@ -866,7 +870,6 @@ form>input,.Message
 	}
 	.text_NP
 	{
-		
 		bottom: 38px;
 	}
 	.menu a
@@ -884,7 +887,7 @@ form>input,.Message
 	{
 		display: none;
 	}
-	.cercle_noir
+	.cercle_noir, .photo:hover .overlay,.menu>a:hover,.infos_web
 	{
 		display: none;
 	}
