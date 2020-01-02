@@ -673,7 +673,7 @@ form>input,.Message
 	{
 		right: 39%;
 	}
-	 .photo:hover .overlay,.menu>a:hover
+	 .photo:hover .overlay
 	{
 		display: none;
 	}
@@ -890,7 +890,7 @@ form>input,.Message
 	{
 		display: none;
 	}
-	.cercle_noir, .photo:hover .overlay,.menu>a:hover,.infos_web
+	.cercle_noir, .photo:hover .overlay,.infos_web
 	{
 		display: none;
 	}
